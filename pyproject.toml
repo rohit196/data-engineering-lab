@@ -1,0 +1,32 @@
+[build-system]
+requires = ["hatchling>=1.27,<2"]
+build-backend = "hatchling.build"
+
+[project]
+name = "data-engineering-lab"
+version = "0.1.0"
+description = "A local-first data engineering scaffold with a tested batch pipeline."
+readme = "README.md"
+requires-python = ">=3.11,<3.14"
+# DuckDB uses pytz when fetching timezone-aware timestamps into Python.
+dependencies = ["duckdb>=1.4,<2", "pytz>=2025.2"]
+
+[project.scripts]
+de-lab = "de_lab.cli:main"
+
+[dependency-groups]
+dev = ["pytest>=8,<10", "ruff>=0.14,<1"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/de_lab"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]

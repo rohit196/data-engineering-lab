@@ -1,0 +1,23 @@
+name: Project idea
+description: Shape the next data engineering project before choosing more infrastructure.
+title: 'Project idea: '
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Audience and problem
+      description: Who benefits, and which decision or workflow improves?
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Candidate data source
+      description: Include a URL, access terms, update cadence, and likely data size if known.
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Smallest useful result
+      description: Describe one output and how we can verify that it is correct.
+    validations:
+      required: true

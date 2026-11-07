@@ -1,0 +1,7 @@
+event_id,entity_id,occurred_at,category,amount_cents
+evt_001,entity_01,2026-01-01T09:00:00Z,Sample_A,1200
+evt_002,entity_02,2026-01-01T10:30:00Z,sample_a,800
+evt_003,entity_01,2026-01-01T15:00:00Z,sample_b,500
+evt_004,entity_03,2026-01-02T00:30:00+01:00,sample_b,250
+evt_005,entity_02,2026-01-02T12:00:00Z,sample_a,2000
+evt_006,entity_04,2026-01-02T18:45:00Z,sample_b,750

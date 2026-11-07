@@ -1,0 +1,8 @@
+version = 1
+description = "Synthetic events used only to demonstrate the scaffold. Replace after project discovery."
+columns = ["event_id", "entity_id", "occurred_at", "category", "amount_cents"]
+unique_key = "event_id"
+required_columns = ["event_id", "entity_id", "occurred_at", "category", "amount_cents"]
+timestamp_column = "occurred_at"
+timestamp_requires_timezone = true
+nonnegative_integer_column = "amount_cents"

@@ -1,0 +1,6 @@
+# Paths are relative to this file, independent of your shell's working directory.
+[paths]
+source = "../data/sample/events.csv"
+contract = "../contracts/events.toml"
+database = "../data/warehouse/analytics.duckdb"
+raw_directory = "../data/raw"
